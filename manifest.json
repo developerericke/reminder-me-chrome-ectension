@@ -1,0 +1,19 @@
+{
+    "manifest_version":2,
+    "name":"Remind Me",
+    "description":"An Chrome Extension to help remind you of tasks at hand. Created with Love :-) by Eric Nderitu",
+    "version":"1.0.0",
+    "icons":{
+        "128":"icon_128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+      },
+      "background":{
+          "scripts":["background.js"]
+      },
+      "permissions":["webNavigation"]
+     
+
+}

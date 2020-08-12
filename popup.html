@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remind Me</title>
+    <style>
+        #button-area{
+            display: flex;
+            height: 10%;
+            flex-wrap: wrap;
+            border-radius: 30px;
+            justify-content: center;
+        }
+
+      #button-area button{
+          flex: 0 0 50%;
+          background-color:palegreen;
+          font-weight: bolder;
+          
+      
+      }
+      #button-area button:hover{
+       
+          cursor: pointer;
+      }
+      #setTime{
+          display: flex;
+          justify-content: space-around;   
+          flex-wrap: wrap;
+         
+      }
+      .forminfo{
+        flex:0 0 60%;
+        margin:2%; 
+        padding: 5px;
+      }
+      .forminfo input{
+          text-align: center;
+          width: 70%;
+          font-size: 20px;
+          border: none;
+      }
+    </style>
+</head>
+<body style="border:3px solid green;padding:10px;width: 400px;height: 500px;">
+    <h3 style="text-align: center;text-decoration: underline;">Welcome to My Reminder</h3>
+    <h4 style="text-align: center;color: darkcyan;font-size: smaller;"> Hey Master, Set yor schedule below and Leave it to me.I will remind you right on time fam. </h4>
+    
+    <h2 id="statusbar" style="text-align:center;text-decoration: underline;color: black;font-weight: bolder;"></h2>
+    <div id="setTime">
+      
+        <div class="forminfo" style="border:1px solid black">  
+
+           <span><span style="font-weight: bold;">Hours :</span> <input   id="hours"   type="number"  min='0' max="12" name="targethours" >
+           </span> 
+        </div> 
+        <div class="forminfo" style="border:1px solid black">  
+
+
+            <span><span style="font-weight: bold;">Minutes :</span> <input   id="minutes"   type="number"  min='0'  max="59" name="targetminutes" >
+            </span> 
+         </div> 
+        
+     
+            <textarea style="text-align: left;" style="margin-bottom: 5%;" class="forminfo" cols="11" rows="3" name="extrainfo" id="extrainfo" placeholder="Additional Notes Here">
+           </textarea>
+        
+    </div>
+    <div id="button-area" >
+        <button id="set_button">Set Reminder</button>
+    </div>
+
+    <script src="./popup.js"></script>
+ 
+    
+</body>
+</html>
